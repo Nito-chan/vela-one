@@ -2,8 +2,6 @@ import * as THREE from 'three';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { COPY } from '../config.js';
 
-gsap.registerPlugin(ScrollTrigger);
-
 // One HTML annotation per layer (chapters 1–6): accent dot + 1px leader
 // line + label, projected from 3D each frame. Mobile: fixed slot, no line.
 const DEFS = [

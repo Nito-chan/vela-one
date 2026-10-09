@@ -149,5 +149,16 @@
     </main>
 
     <script type="module" src="/src/main.js"></script>
+    <script>
+      // Failsafe: never trap visitors behind the loader. If the 3D module
+      // fails (blocked WebGL, asset error), reveal the readable page anyway.
+      setTimeout(function () {
+        if (!document.body.classList.contains('is-ready')) {
+          var l = document.getElementById('loader');
+          if (l) { l.classList.add('done'); setTimeout(function () { l.remove(); }, 1000); }
+          document.body.classList.add('is-ready');
+        }
+      }, 5000);
+    </script>
   </body>
 </html>
