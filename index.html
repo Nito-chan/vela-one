@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>VELA One — Everything inside | Built by Nitō</title>
+    <meta name="description" content="VELA One smartwatch, dissected layer by layer in scroll-driven 3D. A demo product page built by Nitō." />
+    <meta name="theme-color" content="#050506" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VELA One — Everything inside." />
+    <meta property="og:description" content="A scroll-dissected 3D product showcase. Built by Nitō." />
+    <meta property="og:image" content="/og-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VELA One — Everything inside." />
+    <meta name="twitter:description" content="A scroll-dissected 3D product showcase. Built by Nitō." />
+    <meta name="twitter:image" content="/og-cover.svg" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VELA One","description":"Fictional premium smartwatch concept, dissected in scroll-driven 3D.","brand":{"@type":"Brand","name":"VELA"}}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript><p style="padding:2rem;font-family:sans-serif">This 3D showcase needs JavaScript enabled.</p></noscript>
+
+    <div id="loader" role="status" aria-label="Loading">
+      <span class="loader-mark">Nitō</span>
+      <span class="loader-line"><i></i></span>
+    </div>
+
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div id="annotations" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="wordmark" href="#top">Nitō</a>
+      <a class="btn-reserve" href="#reserve">Reserve</a>
+    </nav>
+
+    <div class="rail" role="navigation" aria-label="Chapters">
+      <button type="button" data-target="1" aria-label="Glass"><i></i></button>
+      <button type="button" data-target="2" aria-label="Display"><i></i></button>
+      <button type="button" data-target="3" aria-label="Frame"><i></i></button>
+      <button type="button" data-target="4" aria-label="Mainboard"><i></i></button>
+      <button type="button" data-target="5" aria-label="Power"><i></i></button>
+      <button type="button" data-target="6" aria-label="Sensors"><i></i></button>
+      <button type="button" data-target="7" aria-label="Finale"><i></i></button>
+    </div>
+
+    <main id="top">
+      <section class="hero" data-chapter="0" aria-labelledby="hero-h">
+        <p class="eyebrow">VELA One &mdash; scroll-dissected showcase</p>
+        <h1 id="hero-h" class="reveal"><span>Everything inside.</span><span>Nothing missing.</span></h1>
+        <p class="sub fade">Meet VELA One. Take it apart, see why.</p>
+        <p class="scroll-hint" aria-hidden="true"><span></span>Scroll</p>
+      </section>
+
+      <section class="chapter align-right" data-chapter="1" aria-label="Sapphire glass">
+        <div class="card">
+          <p class="eyebrow">01 &mdash; Sapphire glass</p>
+          <h2 class="reveal">Sapphire, cut to 0.8&nbsp;mm.</h2>
+          <p class="body fade">Scratch-resistant to 9 Mohs. Clearer than anything you have worn.</p>
+          <ul class="specs fade"><li><b>0.8 mm</b><span>thin sapphire</span></li><li><b>9 Mohs</b><span>scratch resistance</span></li><li><b>92%</b><span>light transmission</span></li></ul>
+        </div>
+      </section>
+
+      <section class="chapter align-left" data-chapter="2" aria-label="Display">
+        <div class="card">
+          <p class="eyebrow">02 &mdash; Display</p>
+          <h2 class="reveal">A screen that disappears.</h2>
+          <p class="body fade">LTPO OLED. 2,000 nits. Black so deep the bezel vanishes.</p>
+          <ul class="specs fade"><li><b>2,000 nits</b><span>peak brightness</span></li><li><b>1&ndash;120 Hz</b><span>adaptive refresh</span></li><li><b>0.6 mm</b><span>panel thinness</span></li></ul>
+        </div>
+      </section>
+
+      <section class="chapter align-right" data-chapter="3" aria-label="Frame">
+        <div class="card">
+          <p class="eyebrow">03 &mdash; Frame</p>
+          <h2 class="reveal">Grade 5 titanium.</h2>
+          <p class="body fade">Lighter than steel, twice as tough.</p>
+          <ul class="specs fade"><li><b>Ti-6Al-4V</b><span>grade 5 alloy</span></li><li><b>32 g</b><span>case weight</span></li><li><b>5 ATM</b><span>water resistance</span></li></ul>
+        </div>
+      </section>
+
+      <section class="chapter align-left tall" data-chapter="4" aria-label="Mainboard">
+        <div class="card">
+          <p class="eyebrow">04 &mdash; Mainboard</p>
+          <h2 class="reveal">One chip. Every beat.</h2>
+          <p class="body fade">A custom 4 nm processor, 70 percent of the board&rsquo;s work in one tiny square.</p>
+          <ul class="specs fade"><li><b>4 nm</b><span>custom silicon</span></li><li><b>8-core</b><span>neural engine</span></li><li><b>70%</b><span>of tasks on-chip</span></li></ul>
+        </div>
+      </section>
+
+      <section class="chapter align-right" data-chapter="5" aria-label="Power">
+        <div class="card">
+          <p class="eyebrow">05 &mdash; Power</p>
+          <h2 class="reveal">Three days. Honestly.</h2>
+          <p class="body fade">A stacked cell and a haptic engine tuned to feel like a tap, not a buzz.</p>
+          <ul class="specs fade"><li><b>2.1 Wh</b><span>stacked cell</span></li><li><b>72 h</b><span>typical use</span></li><li><b>40 min</b><span>to 80% charge</span></li></ul>
+        </div>
+      </section>
+
+      <section class="chapter align-left" data-chapter="6" aria-label="Sensors">
+        <div class="card">
+          <p class="eyebrow">06 &mdash; Sensors</p>
+          <h2 class="reveal">It listens to your pulse.</h2>
+          <p class="body fade">Four-LED optical array reads heart rate, oxygen and sleep from the wrist.</p>
+          <ul class="specs fade"><li><b>4-LED</b><span>optical array</span></li><li><b>100 Hz</b><span>sampling rate</span></li><li><b>SpO&#8322; + HR</b><span>always on</span></li></ul>
+        </div>
+      </section>
+
+      <section class="chapter finale align-left" data-chapter="7" id="reserve" aria-labelledby="finale-h">
+        <div class="card">
+          <p class="eyebrow">VELA One</p>
+          <h2 id="finale-h" class="reveal"><span>VELA One.</span><span>Reserve yours.</span></h2>
+          <p class="body fade">Assembled in seconds. Worn for years.</p>
+          <a class="cta fade" href="#built-by">Reserve yours</a>
+        </div>
+      </section>
+      <section class="built-by" id="built-by" aria-labelledby="built-by-h">
+        <div class="wrap">
+          <p class="eyebrow">Built by Nitō</p>
+          <h2 id="built-by-h" class="reveal">This page is a demo. I build pages like this for your product.</h2>
+          <div class="skills">
+            <div class="skill fade"><h3>Web Development</h3><p>Fast, SEO-ready, deployed on Netlify.</p></div>
+            <div class="skill fade"><h3>UI/UX Design</h3><p>Clear, premium, conversion-minded.</p></div>
+            <div class="skill fade"><h3>Video-Grade Motion</h3><p>Cinematic pacing, scroll storytelling.</p></div>
+            <div class="skill fade"><h3>AI Automation</h3><p>Leads captured and routed automatically with Make.com.</p></div>
+          </div>
+          <div class="reel fade" role="img" aria-label="Showreel placeholder">
+            <!-- swap with showreel <video> -->
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2"/><path d="M26 20l14 12-14 12z" fill="currentColor"/></svg>
+            <span>Showreel — coming soon</span>
+          </div>
+          <p class="portfolio fade"><a href="#" id="portfolio-link">See my portfolio</a></p>
+          <form id="lead-form" class="fade" novalidate>
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required /></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div>
+            <div class="field"><label for="f-brand">Brand / product</label><input id="f-brand" name="brand" type="text" autocomplete="organization" /></div>
+            <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" required></textarea></div>
+            <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="company" tabindex="-1" autocomplete="off" /></label></div>
+            <button class="cta" type="submit" id="lead-submit">Send inquiry</button>
+            <p class="form-note" id="form-note" role="status"></p>
+          </form>
+          <p class="automation-line fade">Your message triggers an automation: lead stored, auto-reply sent, I get pinged.</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
