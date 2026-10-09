@@ -46,40 +46,18 @@ export const COPY = {
   finaleCta: 'Reserve yours',
 };
 
-// Stack axis = Y. Whole watch ~3 units wide.
-export const ASSEMBLED_Y = {
-  back: 0.0,
-  battery: 0.14,
-  haptic: 0.14,
-  board: 0.3,
-  frame: 0.46,
-  display: 0.54,
-  glass: 0.62,
-  crown: 0.46,
-};
-
 export const STAGE = {
-  fov: 35,
-  cameraPos: [3.2, 2.4, 4.4],
-  lookAt: [0, 0.32, 0],
-  exposure: 1.0,
   pixelRatioDesktop: 2,
   pixelRatioMobile: 1.5,
-  pixelRatioLow: 1.25,
-  lowFps: 40, // sustained threshold that triggers low-power mode
+};
+
+// Scroll-scrubbed filmstrip (public/frames/frame-001.jpg …).
+export const FILM = {
+  count: 120,
 };
 
 export const MOTION = {
   loaderMinMs: 1200,
-  floatAmp: 0.03,
-  floatSpeed: 1.1,
-  heroSpin: 0.1, // rad/s
-  parallaxDeg: 4,
-};
-
-// Scroll choreography tunables. Gap = exploded spacing between stacked layers.
-export const EXPLODE = {
-  gap: 0.9,
 };
 
 export const FONTS = {
